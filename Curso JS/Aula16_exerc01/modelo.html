@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div id="entrada">
+            <p>Número (entre 1 e 100):
+               <input type="number" id="inpnum" name="inpnum" min="1" max="100"  autofocus onkeypress="teclou()">
+               <input type="button" id="inpatu" name="inpatu" value="Atualizar" onclick="atualiza()"> 
+            </p>
+            <select name="selnum" id="selnum" size="200"></select>
+            <br><input type="button" id="inpfin" name="inpfin" value="Finalizar" onclick="finaliza()">
+            <input type="submit" id='inpreco' value="Recomeça" onclick="recomeca()">
+        
+            <script>
+                window.onkeypress = press
+                function press() {
+                    alert(event.keycode)
+                    
+                }
+            </script>
+        
+        
+        </div>
+        <div id="res">
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
